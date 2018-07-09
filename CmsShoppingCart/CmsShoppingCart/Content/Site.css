@@ -100,6 +100,23 @@ border-bottom: 0; }
 /*////////////////////////////////////////////////////////////////////////*/
 
    
+#searchName {
+    width: 140px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    padding: 0px 0px 5px 10px;
+    font-family:myFont2;
+    transition:width 0.3s ease-in-out;
+    margin-top: 12px;
+
+}
+
+#searchName:focus
+ {
+        width: 100%;
+
+ }
 
 
 
