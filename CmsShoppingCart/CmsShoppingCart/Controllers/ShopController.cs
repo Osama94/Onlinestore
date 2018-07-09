@@ -92,5 +92,26 @@ namespace CmsShoppingCart.Controllers
 
             return View("ProductDetails",model);
         }
+        
+          public ActionResult Search()
+        {
+
+            return View();
+        }
+
+
+
+        [HttpPost]
+        public ActionResult Search(string searchName)
+        {
+            using (Db db = new Db())
+            {
+                var result = db.Products.Where(a => a.Name.Contains(searchName) ||
+                                            a.CategoryName.Contains(searchName) ||
+                                            a.Description.Contains(searchName)).ToList();
+            return View(result);
+            }
+
+        }
     }
 }
