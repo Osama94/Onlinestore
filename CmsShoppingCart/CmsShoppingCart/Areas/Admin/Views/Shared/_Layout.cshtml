@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Admin Area</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Footer-with-button-logo.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-topcancel">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="/admin/dashboard" class="navbar-brand">Dashboard</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li><a href="/admin/pages">Pages</a> </li>
+                  <li> <a href="/admin/pages/EditSidebar">Sidebar</a></li>
+                    <li> <a href="/admin/Shop/Categories">Categories</a></li>
+                    <li> <a href="/admin/Shop/Products">Products</a></li>
+                    <li> <a href="/admin/Shop/Orders">Orders</a></li>
+
+                    
+
+</ul>
+                <ul class="navbar-right">
+                    <li>
+                        <a href="/" class="btn btn-info" style="margin-bottom:-25px;" target="_blank">Online Store</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        
+    </div>
+
+
+    @*Start Footer*@
+
+
+    <footer id="myFooter" style="margin-right:0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h2 class="logo"><a href="/"> OnlineStore </a></h2>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="/about-us">Company Information</a></li>
+                        <li><a href="/contact-us">Contact us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="https://twitter.com/Osama9494" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/osama.ahmed2014" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/osamaahmed94" class="google"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                    <button m type="button" class="btn btn-default">Contact us</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2018 Copyright OnlineStore </p>
+        </div>
+    </footer>
+
+
+    @*End Fotter*@
+
+    <!-- Start Back Top -->
+
+    <div id="back-top">
+        <i class="fa fa-angle-up"></i>
+    </div>
+
+    <!-- End Back Top -->
+
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/SiteJs.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Online Store</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Footer-with-button-logo.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+
+
+        <div class="navbar navbar-inverse navbar-fixed-topcancel">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <a href="/" class="navbar-brand">Online Store</a>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        @Html.Action("PagesMenuPartial", "Pages")
+                        @if (Request.IsAuthenticated)
+                        {
+                            <li> <a href="/account/Logout">Logout</a> </li>
+                        }
+                        else
+                        {
+                            if (ViewBag.Title == "Login")
+                            {
+                                <li class="active"><a href="/account/Login">Login</a> </li>
+                            }
+
+                            else
+                            {
+                                <li><a href="/account/Login">Login</a> </li>
+
+                            }
+
+                        }
+
+                        @if (Request.IsAuthenticated && User.IsInRole("User"))
+                        {
+                            if (ViewBag.Title == "User Profile" || ViewBag.Title == "Orders")
+                            {
+                                <li class="active"> @Html.Action("UserNavPartial", "Account", new { area = "" })</li>
+                            }
+                            else
+                            {
+                                <li> @Html.Action("UserNavPartial", "Account", new { area = "" })</li>
+                            }
+
+                        }
+                    </ul>
+
+                    @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                    {
+                        <ul class="navbar-collapse collapse navbar-right adminarea">
+                            <li>@Html.ActionLink("Admin Area", "Index", "Dashboard", new { area = "Admin" }, new {@class="btn btn-info" })</li>
+                        </ul>
+                    }
+                    else
+                    {
+                        if (ViewBag.Title != "Cart Details")
+                        {
+                            <ul class="navbar-collapse collapse navbar-right">
+                                @Html.Action("CartPartial", "Cart")
+                            </ul>
+                        }
+
+                    }
+
+
+                </div>
+            </div>
+        </div>
+
+ 
+
+    @*start fixed menu*@
+  
+
+    <div class="fixed-menu">
+        <i class="fa fa-gear"></i>
+        <h3 style="text-align:center; color:#ff7979">Contact Us</h3>
+        <hr />
+        <ul style="font-size:larger">
+            <li> <a href="https://www.facebook.com/osama.ahmed2014" target="_blank"> Facebook <i class="fa fa-facebook"></i></a></li>
+            <li> <a href="https://twitter.com/Osama9494" target="_blank"> Twitter <i class="fa fa-twitter"></i></a></li>
+            <li> <a href="https://www.youtube.com/" target="_blank"> Youtube  <i class="fa fa-youtube"></i></a></li>
+        </ul>
+        <br /> <br /> <br /> <br /> <br /> <br /> 
+        
+        <hr />
+
+    </div>
+
+    @*end fixed menu*@
+
+
+        <div class="container body-content">
+            <div class="row">
+
+                <div class="ajaxbg"><span> <img src="~/Content/img/ajax-loader.gif" /> </span> </div>
+
+                <!-- This If Statment To Make Category Menu Don't Appear In These Below Pages-->
+                @if (ViewBag.Title != "Create Account" &&
+             ViewBag.Title != "Login" &&
+             ViewBag.Title != "User Profile" &&
+             ViewBag.Title != "Orders"
+            )
+                {
+                    <div class="col-xs-12 col-md-2">
+                        @Html.Action("CategoryMenuPartial", "Shop")
+                    </div>
+                }
+
+                <!-- This If Statment To -->
+
+                @if (ViewBag.Title == "User Profile")
+            {
+                    <div class="col-xs-12 col-md-2">
+                        <ul>
+                            <li>
+                                <a href="/account/orders" class="btn btn-warning">My Orders</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                }
+
+                <!-- This If Statment To -->
+
+                @if (ViewBag.Title == "Orders")
+            {
+                    <div class="col-xs-12 col-md-2">
+                        <ul>
+                            <li>
+                                <a href="/account/user-profile" class="btn btn-warning">My Profile</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                }
+
+                @if (ViewBag.Sidebar == "Yes")
+            {
+                    <div class="col-xs-12 col-md-7">
+                        @RenderBody()
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        @Html.Action("SidebarPartial", "Pages")
+
+                    </div>
+                }
+
+                else
+                {
+                    <div class="col-xs-12 col-md-10">
+                        @RenderBody()
+                    </div>
+                }
+            </div>
+
+
+            @*Start Footer*@
+
+
+            <footer id="myFooter">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h2 class="logo"><a href="/"> OnlineStore </a></h2>
+                            </div>
+                            <div class="col-sm-2">
+                                <h5>Get started</h5>
+                                <ul>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="#">Sign up</a></li>
+                                    <li><a href="#">Downloads</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-2">
+                                <h5>About us</h5>
+                                <ul>
+                                    <li><a href="/about-us">Company Information</a></li>
+                                    <li><a href="/contact-us">Contact us</a></li>
+                                    <li><a href="#">Reviews</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-2">
+                                <h5>Support</h5>
+                                <ul>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Help desk</a></li>
+                                    <li><a href="#">Forums</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="social-networks">
+                                    <a href="https://twitter.com/Osama9494" class="twitter"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com/osama.ahmed2014" class="facebook"><i class="fa fa-facebook"></i></a>
+                                    <a href="https://www.linkedin.com/in/osamaahmed94" class="google"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <button m type="button" class="btn btn-default">Contact us</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-copyright">
+                        <p>© 2018 Copyright OnlineStore </p>
+                    </div>
+                </footer>
+
+
+            @*End Fotter*@
+        </div>
+         
+
+    <!-- Start Back Top -->
+
+    <div id="back-top">
+        <i class="fa fa-angle-up"></i>
+    </div>
+
+    <!-- End Back Top -->
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/SiteJs.js"></script>
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+
+</body>
+</html>
+
+
+
+

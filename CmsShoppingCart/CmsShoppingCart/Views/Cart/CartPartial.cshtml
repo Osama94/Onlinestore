@@ -1,0 +1,7 @@
+﻿@model CmsShoppingCart.Models.Cart.CartVM
+<div class="ajaxcart" style="color:white; text-align:right;">
+
+    Your Cart: @Model.Quantity item(s) - $@Model.Price
+    <br />
+    @Html.ActionLink("Checkout","Index",null,new { @class= "chldiv btn btn-success " })
+</div>

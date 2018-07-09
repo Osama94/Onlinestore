@@ -1,0 +1,254 @@
+﻿@model IEnumerable<CmsShoppingCart.Models.Cart.CartVM>
+
+@{
+    ViewBag.Title = "Cart Details";
+    int count = 1;
+}
+
+<h2>Cart Details</h2>
+
+
+
+@if (ViewBag.Message != null)
+{
+ 
+       <h3>@ViewBag.Message</h3> 
+ 
+}
+
+else
+{
+
+
+<table class="table table-bordered">
+    <tr>
+        
+        <th>
+           Name
+        </th>
+        <th>
+           Quantity
+        </th>
+        <th>
+            Price
+        </th>
+        <th>
+            Image
+        </th>
+        <th>
+
+        </th>
+        <th>
+            Total
+        </th>
+        <th>
+
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductName)
+        </td>
+        <td class="qty@(item.ProductId)">
+            @Html.DisplayFor(modelItem => item.Quantity)
+        </td>
+        <td>
+            $@Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            <img src="/Images/Uploads/Products/@item.ProductId/Thumbs/@item.Image" />
+        </td>
+
+        
+        
+        <td>
+         <a href="#" class="incrproduct btn btn-success" data-id="@item.ProductId">+</a>
+            <a href="#" class="decrproduct btn btn-info" data-id="@item.ProductId">-</a>
+            <a href="#" class="removeproduct btn btn-danger" data-id="@item.ProductId">remove</a>
+
+        </td>
+
+        <td class="total@(item.ProductId)">
+            $@Html.DisplayFor(modelItem => item.Total)
+        </td>
+    </tr>
+}
+
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="grandtotal"><b>Grand Total: </b>$ <span>@ViewBag.GrandTotal</span></td>
+
+    </tr>
+</table>
+
+<div class="paybaldiv">
+    <form class="paybalform" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_cart" />
+        <input type="hidden" name="upload" value="1" />
+        <input type="hidden" name="business" value="jultranet-facilitator@gmail.com" />
+
+        @foreach (var item in Model)
+        {
+            <input type="hidden" name="item_name_@count" value="@item.ProductName" />
+            <input type="hidden" name="amount_@count" value="@item.Price" />
+            <input type="hidden" name="quantity_@count" value="@item.Quantity" />
+            count++;
+        }
+
+
+        <input type="hidden" name="currency_code" value="USD" />
+        <input type="image" src="http://www.paypal.com/en_US/i/btn/x-click-but01.gif" name="submit" alt="Make Payment's With Paybal- It's Fast Free And Secure" />
+
+    </form>
+</div>
+    <br />
+    <a href="#" class="palceorder btn btn-primary pull-right">Checkout</a>
+}
+
+
+@section Scripts{
+
+
+    
+
+    <script>
+        $(function () {
+            /*
+               increment product
+            */
+            $("a.incrproduct").click(function (e) {
+                e.preventDefault();
+                var productId = $(this).data("id");
+                var url = "/Cart/IncrementProduct";
+
+                $.getJSON(url, { productId: productId }, function (data) {
+
+                    $("td.qty" + productId).html(data.qty);
+
+                    var price = data.qty * data.price;
+                    var priceHtml = "$" + price.toFixed(2);
+
+                    $("td.total" + productId).html(priceHtml);
+
+                    var gt = parseFloat($("td.grandtotal span").text());
+                    var grandtotal = (gt + data.price).toFixed(2);
+                    $("td.grandtotal span").text(grandtotal);
+                }).done(function (data) {
+                    var url2 = "/Cart/PaybalPartial";
+
+                    $.get(url2, {  }, function (data) {
+                        $("div.paybaldiv").html(data);
+
+                    });
+                });
+
+            });
+
+            ///////////////////////////////////
+
+
+            /*
+               decrement product
+            */
+            $("a.decrproduct").click(function (e) {
+                e.preventDefault();
+
+                var $this = $(this);
+                var productId = $(this).data("id");
+                var url = "/Cart/DecrementProduct";
+
+                $.getJSON(url, { productId: productId }, function (data) {
+                    if (data.qty == 0) {
+                        $this.parent().parent().fadeOut("fast", function () {
+                            location.reload();
+                        });
+                    }
+
+                    else {
+                        $("td.qty" + productId).html(data.qty);
+
+                        var price = data.qty * data.price;
+                        var priceHtml = "$" + price.toFixed(2);
+
+                        $("td.total" + productId).html(priceHtml);
+
+                        var gt = parseFloat($("td.grandtotal span").text());
+                        var grandtotal = (gt - data.price).toFixed(2);
+                        $("td.grandtotal span").text(grandtotal);
+                    }
+
+                }).done(function (data) {
+
+
+                    var url2 = "/Cart/PaybalPartial";
+
+                    $.get(url2, {}, function (data) {
+                        $("div.paybaldiv").html(data);
+
+                    });
+                });
+
+
+            });
+
+            ///////////////////////////////////
+
+
+
+
+            /*
+              remove product
+           */
+            $("a.removeproduct").click(function (e) {
+                e.preventDefault();
+
+                var $this = $(this);
+                var productId = $(this).data("id");
+                var url = "/Cart/RemoveProduct";
+
+                $.get(url, { productId: productId }, function (data) {
+                    location.reload();
+
+                });
+
+            });
+
+            ///////////////////////////////////
+
+
+            /*
+              Place Order
+           */
+            $("a.palceorder").click(function (e) {
+                e.preventDefault();
+
+                var $this = $(this);
+                var url = "/cart/PlaceOrder";
+
+                $(".ajaxbg").show();
+
+                $.post(url, { }, function (data) {
+                    $(".ajaxbg span").text("Thank You , You Will Now be Redirected To Paybal");
+                    setTimeout(function () {
+                        $('form input[name="submit"]').click();
+                    },1000);
+
+                });
+
+            });
+
+            ///////////////////////////////////
+        });
+
+
+
+    </script>
+}

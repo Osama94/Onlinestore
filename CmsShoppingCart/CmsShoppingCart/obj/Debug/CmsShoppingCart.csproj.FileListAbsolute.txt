@@ -1,0 +1,96 @@
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\roslyn\csc.exe
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\roslyn\vbc.exe
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\roslyn\VBCSCompiler.exe
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\CmsShoppingCart.dll.config
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\CmsShoppingCart.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\CmsShoppingCart.pdb
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\Antlr3.Runtime.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\EntityFramework.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\EntityFramework.SqlServer.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\Newtonsoft.Json.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\PagedList.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\PagedList.Mvc.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\System.Web.Helpers.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\System.Web.Mvc.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\System.Web.Optimization.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\System.Web.Razor.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\System.Web.WebPages.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\System.Web.WebPages.Razor.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\WebGrease.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\EntityFramework.xml
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\EntityFramework.SqlServer.xml
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\PagedList.xml
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\PagedList.Mvc.xml
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\System.Web.Helpers.xml
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\System.Web.Mvc.xml
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\System.Web.Optimization.xml
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\System.Web.Razor.xml
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\System.Web.WebPages.xml
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\System.Web.WebPages.Razor.xml
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\Antlr3.Runtime.pdb
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\bin\Newtonsoft.Json.xml
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\obj\Debug\CmsShoppingCart.csprojResolveAssemblyReference.cache
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\obj\Debug\CmsShoppingCart.dll
+C:\Users\Osama Ahmed\Desktop\English courses\CmsShoppingCart backup\CmsShoppingCart\CmsShoppingCart\obj\Debug\CmsShoppingCart.pdb
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\roslyn\csc.exe
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\roslyn\vbc.exe
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\roslyn\VBCSCompiler.exe
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\CmsShoppingCart.dll.config
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\CmsShoppingCart.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\CmsShoppingCart.pdb
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\Antlr3.Runtime.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\EntityFramework.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\EntityFramework.SqlServer.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\Newtonsoft.Json.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\PagedList.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\PagedList.Mvc.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\System.Web.Helpers.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\System.Web.Mvc.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\System.Web.Optimization.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\System.Web.Razor.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\System.Web.WebPages.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\System.Web.WebPages.Razor.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\WebGrease.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\EntityFramework.xml
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\EntityFramework.SqlServer.xml
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\PagedList.xml
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\PagedList.Mvc.xml
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\System.Web.Helpers.xml
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\System.Web.Mvc.xml
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\System.Web.Optimization.xml
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\System.Web.Razor.xml
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\System.Web.WebPages.xml
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\System.Web.WebPages.Razor.xml
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\Antlr3.Runtime.pdb
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\bin\Newtonsoft.Json.xml
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\obj\Debug\CmsShoppingCart.csprojResolveAssemblyReference.cache
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\obj\Debug\CmsShoppingCart.dll
+C:\Users\Osama Ahmed\Desktop\CmsShoppingCart\CmsShoppingCart\obj\Debug\CmsShoppingCart.pdb

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<CmsShoppingCart.Models.ViewModels.Shop.CategoryVM>
+
+
+
+@*<div style="border:2px solid #000; height:400px; width:180px;">
+
+    <h3 class="text-center">Categories</h3>
+    <hr />
+
+    <ul style="list-style: none; padding-left: 0px;">
+
+        @foreach (var item in Model)
+        {
+
+            <li style="margin:3px; ">
+                <a href="/shop/category/@item.Slug.ToLower()" class="btn btn-block btn-primary btn-lg">@item.Name</a>
+            </li>
+
+            
+        }
+    </ul>
+</div>*@
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <!-- Category -->
+                    <div class="single category">
+                        <h3 class="side-title">Category</h3>
+                        <ul class="list-unstyled">
+
+                                @foreach (var item in Model)
+                                {
+
+                                    <li style="margin:3px; ">
+                                        <a href="/shop/category/@item.Slug.ToLower()" >@item.Name</a>
+                                    </li>
+                                }                
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
